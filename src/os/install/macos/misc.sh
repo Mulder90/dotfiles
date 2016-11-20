@@ -8,76 +8,35 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 install_apps() {
 
-    brew_install "Android File Transfer" "android-file-transfer" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Brotli" "brotli"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+    # Cask
+    brew_install "Java" "java" "caskroom/cask" "cask"
+    brew_install "Flash" "flash-npapi" "caskroom/cask" "cask"
+    brew_install "Unarchiver" "the-unarchiver" "caskroom/cask" "cask"
+    brew_install "VLC" "vlc" "caskroom/cask" "cask"
+    brew_install "AppCleaner" "appcleaner" "caskroom/cask" "cask"
+    brew_install "Flux" "flux" "caskroom/cask" "cask"
+    brew_install "Dropbox" "dropbox" "caskroom/cask" "cask"
+    brew_install "Skype" "skype" "caskroom/cask" "cask"
+    brew_install "Spotify" "spotify" "caskroom/cask" "cask"
+    brew_install "Vagrant" "vagrant" "caskroom/cask" "cask"
+    brew_install "Caffeine" "caffeine" "caskroom/cask" "cask"
+    brew_install "Gas Mask" "gas-mask" "caskroom/cask" "cask"
+    brew_install "Genymotion" "genymotion" "caskroom/cask" "cask"
+    brew_install "Slack" "slack" "caskroom/cask" "cask"
+    brew_install "Atom" "atom" "caskroom/cask" "cask"
+    brew_install "Sublime Text" "sublime-text" "caskroom/cask" "cask"
+    brew_install "qlcolorcode" "qlcolorcode" "caskroom/cask" "cask"
+    brew_install "qlstephen" "qlstephen" "caskroom/cask" "cask"
+    brew_install "quicklook-csv" "quicklook-csv" "caskroom/cask" "cask"
+    brew_install "quicklook-json" "quicklook-json" "caskroom/cask" "cask"
+    brew_install "qlmarkdown" "qlmarkdown" "caskroom/cask" "cask"
+    brew_install "iterm2" "iterm2" "caskroom/cask" "cask"
+    brew_install "Dashlane" "dashlane" "caskroom/cask" "cask"
     brew_install "Chrome" "google-chrome" "caskroom/cask" "cask"
     brew_install "Chrome Canary" "google-chrome-canary" "caskroom/versions" "cask"
-    brew_install "Chromium" "chromium" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "FFmpeg" "ffmpeg"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
     brew_install "Firefox" "firefox" "caskroom/cask" "cask"
     brew_install "Firefox Developer" "firefoxdeveloperedition" "caskroom/versions" "cask"
-    brew_install "Firefox Nightly" "firefoxnightly" "caskroom/versions" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Flash" "flash-npapi" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "GIMP" "lisanet-gimp" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Git" "git"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "GPG" "gpg"
-    brew_install "GPG Agent" "gpg-agent"
-    brew_install "Pinentry" "pinentry-mac"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "ImageAlpha" "imagealpha" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "ImageMagick" "imagemagick --with-webp"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "ImageOptim" "imageoptim" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "LibreOffice" "libreoffice" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "LICEcap" "licecap" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
     brew_install "Opera" "opera" "caskroom/cask" "cask"
-    brew_install "Opera Beta" "opera-beta" "caskroom/versions" "cask"
-    brew_install "Opera Developer" "opera-developer" "caskroom/versions" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # `Safari Technology Preview` requires macOS 10.11.4 or la
-    # https://github.com/alrra/dotfiles/issues
 
     if is_supported_version "$(get_os_version)" "10.11.4"; then
         brew_install "Safari Technology Preview" "safari-technology-preview" "caskroom/versions" "cask"
@@ -85,46 +44,27 @@ install_apps() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    brew_install "ShellCheck" "shellcheck"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Spectacle" "spectacle" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "tmux" "tmux"
-    brew_install "tmux (pasteboard)" "reattach-to-user-namespace"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Transmission" "transmission" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Unarchiver" "the-unarchiver" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Vim" "vim --with-override-system-vi"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "VLC" "vlc" "caskroom/cask" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Web Font Tools: TTF/OTF → WOFF (Zopfli)" "sfnt2woff-zopfli" "bramstein/webfonttools"
-    brew_install "Web Font Tools: TTF/OTF → WOFF" "sfnt2woff" "bramstein/webfonttools"
-    brew_install "Web Font Tools: WOFF2" "woff2" "bramstein/webfonttools"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "WebKit" "webkit-nightly" "caskroom/versions" "cask"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    brew_install "Zopfli" "zopfli"
+    brew_install "Git" "git"
+    brew_install "Node" "node"
+    brew_install "wget" "wget --with-iri"
+    brew_install "coreutils" "coreutils"
+    brew_install "moreutils" "moreutils"
+    brew_install "findutils" "findutils"
+    brew_install "sed" "gnu-sed --with-default-names"
+    brew_install "grep" "homebrew/dupes/grep"
+    brew_install "openssh" "homebrew/dupes/openssh"
+    brew_install "jq" "jq"
+    brew_install "mongodb" "mongodb"
+    brew_install "postgresql" "postgresql"
+    brew_install "the_silver_searcher" "the_silver_searcher"
+    brew_install "yarn" "yarn"
+    brew_install "zsh" "zsh"
+    brew_install "elixir" "elixir"
+    brew_install "pyenv-virtualenv" "pyenv-virtualenv"
+    brew_install "FFmpeg" "ffmpeg"
+    brew_install "ImageMagick" "imagemagick --with-webp"
+    brew_install "exercism" "exercism"
+    brew_install "android-platform-tools" "android-platform-tools"
 
 }
 

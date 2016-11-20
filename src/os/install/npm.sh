@@ -22,10 +22,14 @@ main() {
 
     install_npm_package "npm (update)" "npm"
     printf "\n"
-    install_npm_package "!nstant-markdown-d" "instant-markdown-d"
-    install_npm_package "Babel" "babel-cli"
-    install_npm_package "JSHint" "jshint"
-    install_npm_package "Yarn"  "yarn"
+    install_npm_package "n" "n"
+    install_npm_package "npm-check" "npm-check"
+    install_npm_package "tern" "tern"
+    install_npm_package "eslint" "eslint"
+    install_npm_package "diff-so-fancy" "diff-so-fancy"
+    install_npm_package "gulp-cli" "gulp-cli"
+    install_npm_package "grunt-cli" "grunt-cli"
+    install_npm_package "bower" "bower"
 
 }
 

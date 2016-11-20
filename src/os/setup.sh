@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -r GITHUB_REPOSITORY="alrra/dotfiles"
+declare -r GITHUB_REPOSITORY="Mulder90/dotfiles"
 
 declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
@@ -251,10 +251,6 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     ./create_symbolic_links.sh "$@"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    ./create_local_config_files.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
