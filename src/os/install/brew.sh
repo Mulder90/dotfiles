@@ -216,6 +216,7 @@ install_apps() {
     brew_install "ImageMagick" "imagemagick --with-webp"
     brew_install "exercism" "exercism"
     brew_install "android-platform-tools" "android-platform-tools"
+    brew_install "Ruby Manager" "rbenv"
 
 }
 

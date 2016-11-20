@@ -6,7 +6,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
-
     print_in_purple "\n   Miscellaneous\n\n"
 
 }
