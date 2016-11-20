@@ -7,7 +7,7 @@ These are the dotfiles that I use, started as fork of [Cătălin](https://github
 To set up the `dotfiles` just run the appropriate snippet in the
 terminal:
 
-`bash -c "$(curl -LsS https://raw.github.com/mulder90/dotfiles/master/src/os/setup.sh)"`
+`bash -c "$(curl -LsS https://raw.github.com/mulder90/dotfiles/master/setup.sh)"`
 
 That's it! :sparkles:
 
@@ -22,7 +22,7 @@ username with your own.
 ## Update
 
 To update the dotfiles you can either run the [`setup`
-script](src/os/setup.sh)
+script](setup.sh)
 
 
 ## Acknowledgements
