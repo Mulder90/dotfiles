@@ -8,8 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 install_npm_package() {
 
     execute \
-        ". $HOME/.bash.local \
-            && npm install --global --silent $2" \
+        "npm install --global --silent $2" \
         "$1"
 
 }
