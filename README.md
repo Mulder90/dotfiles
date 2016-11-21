@@ -22,7 +22,7 @@ username with your own.
 ## Update
 
 To update the dotfiles you can either run the [`setup`
-script](setup.sh)
+script](setup.sh) or, if you want to just update one particular part, run the appropriate script
 
 
 ## Acknowledgements
