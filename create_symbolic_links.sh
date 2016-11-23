@@ -9,17 +9,10 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
 
-        # "shell/aliases/bash_aliases"
-        # "shell/autocomplete/$(get_os)/bash_autocomplete"
-        # "shell/bash_exports"
-        # "shell/bash_functions"
-        # "shell/bash_logout"
-        # "shell/bash_options"
-        # "shell/bash_profile"
-        # "shell/bash_prompt"
-        # "shell/bashrc"
-        # "shell/curlrc"
-        # "shell/inputrc"
+        "shell/shell_aliases"
+        "shell/shell_exports"
+        "shell/shell_functions"
+        "shell/zshrc"
 
         "git/gitattributes"
         "git/gitconfig"
