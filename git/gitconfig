@@ -6,7 +6,7 @@
 	ui = auto
 
 [alias]
-	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	tree = log --graph --decorate --pretty=format:'%C(bold yellow)%h%Creset -%C(auto)%d %s %C(bold cyan)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	editm = "!$EDITOR $(git ls-files -m)"
 	diffs = !git diff --staged
 	sattus = !git status
@@ -39,3 +39,5 @@
 	compactionHeuristic = true
 [pull]
 	rebase = true
+[sequence]
+	editor = rebase-editor

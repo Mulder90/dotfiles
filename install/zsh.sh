@@ -21,18 +21,15 @@ change_default_bash() {
 install_zgen() {
     printf "cloning zgen..."
     git clone https://github.com/tarjoilija/zgen.git ~/
-
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
-
     print_in_purple "\n   zsh\n\n"
 
     change_default_bash
     install_zgen
-
 }
 
 main

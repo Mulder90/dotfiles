@@ -10,7 +10,7 @@ export LC_ALL="en_US.UTF-8"
 export PYTHONIOENCODING="UTF-8"
 
 # editors
-export EDITOR=subl
+export EDITOR=code
 export GIT_EDITOR=nano
 
 # Don’t clear the screen after quitting a manual page
@@ -28,3 +28,5 @@ which shopt > /dev/null && shopt -s histappend  # append to history, don't overw
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export PATH="$PATH:$HOME/.yarn/bin"
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python

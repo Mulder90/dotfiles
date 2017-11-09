@@ -6,7 +6,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 install_npm_package() {
-
     execute \
         "npm install --global --silent $2" \
         "$1"
@@ -16,7 +15,6 @@ install_npm_package() {
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
-
     print_in_purple "\n   npm\n\n"
 
     install_npm_package "npm (update)" "npm"
@@ -26,10 +24,8 @@ main() {
     install_npm_package "tern" "tern"
     install_npm_package "eslint" "eslint"
     install_npm_package "diff-so-fancy" "diff-so-fancy"
-    install_npm_package "gulp-cli" "gulp-cli"
-    install_npm_package "grunt-cli" "grunt-cli"
-    install_npm_package "bower" "bower"
-
+    install_npm_package "http-server" "http-server"
+    install_npm_package "rebase-editor" "rebase-editor"
 }
 
 main

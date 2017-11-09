@@ -27,6 +27,7 @@ if ! zgen saved; then
 	# this must be the last loaded
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load oskarkrawczyk/honukai-iterm-zsh honukai.zsh-theme
+    zgen load caarlos0/zsh-open-pr
 
 	open .zgen/oskarkrawczyk/honukai-iterm-zsh-master/honukai.itermcolors
 
@@ -39,3 +40,4 @@ for file in ~/.{shell_aliases,shell_exports,shell_functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+export PATH="/usr/local/sbin:$PATH"

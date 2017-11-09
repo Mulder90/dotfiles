@@ -54,15 +54,16 @@ alias empty-trash="sudo rm -frv /Volumes/*/.Trashes; \
                    sudo rm -frv /private/var/log/asl/*.asl; \
                    sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
-alias update="sudo softwareupdate --install --all \
-            && brew -v update \
+alias update="brew -v update \
             && brew upgrade --force-bottle --cleanup \
+            && brew_cask_upgrade \
             && brew cleanup \
             && brew cask cleanup \
             && brew prune \
             && brew doctor \
             && npm install -g npm \
-            && npm update -g"
+            && npm update -g \
+            && npm-check -gu"
 
 # Lock screen.
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"

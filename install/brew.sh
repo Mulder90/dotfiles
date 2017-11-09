@@ -161,8 +161,6 @@ install_apps() {
 
     # Cask
     brew_install "Java" "java" "caskroom/cask" "cask"
-    brew_install "Flash" "flash-npapi" "caskroom/cask" "cask"
-    brew_install "Unarchiver" "the-unarchiver" "caskroom/cask" "cask"
     brew_install "VLC" "vlc" "caskroom/cask" "cask"
     brew_install "AppCleaner" "appcleaner" "caskroom/cask" "cask"
     brew_install "Flux" "flux" "caskroom/cask" "cask"
@@ -171,27 +169,19 @@ install_apps() {
     brew_install "Spotify" "spotify" "caskroom/cask" "cask"
     brew_install "Vagrant" "vagrant" "caskroom/cask" "cask"
     brew_install "Caffeine" "caffeine" "caskroom/cask" "cask"
-    brew_install "Gas Mask" "gas-mask" "caskroom/cask" "cask"
-    brew_install "Genymotion" "genymotion" "caskroom/cask" "cask"
     brew_install "Slack" "slack" "caskroom/cask" "cask"
-    brew_install "Atom" "atom" "caskroom/cask" "cask"
-    brew_install "Sublime Text" "sublime-text" "caskroom/cask" "cask"
+    brew_install "Visual Studio Code Insiders" "visual-studio-code-insiders" "caskroom/cask" "cask"
     brew_install "qlcolorcode" "qlcolorcode" "caskroom/cask" "cask"
     brew_install "qlstephen" "qlstephen" "caskroom/cask" "cask"
     brew_install "quicklook-csv" "quicklook-csv" "caskroom/cask" "cask"
     brew_install "quicklook-json" "quicklook-json" "caskroom/cask" "cask"
     brew_install "qlmarkdown" "qlmarkdown" "caskroom/cask" "cask"
     brew_install "iterm2" "iterm2" "caskroom/cask" "cask"
-    brew_install "Dashlane" "dashlane" "caskroom/cask" "cask"
     brew_install "Chrome" "google-chrome" "caskroom/cask" "cask"
-    brew_install "Chrome Canary" "google-chrome-canary" "caskroom/versions" "cask"
-    brew_install "Firefox" "firefox" "caskroom/cask" "cask"
-    brew_install "Firefox Developer" "firefoxdeveloperedition" "caskroom/versions" "cask"
-    brew_install "Opera" "opera" "caskroom/cask" "cask"
-
-    if is_supported_version "$(get_os_version)" "10.11.4"; then
-        brew_install "Safari Technology Preview" "safari-technology-preview" "caskroom/versions" "cask"
-    fi
+    brew_install "Last Pass" "lastpass" "caskroom/cask" "cask"
+    brew_install "Clipy" "clipy" "caskroom/cask" "cask"
+    brew_install "Slow Quit Apps" "slowquitapps" "caskroom/cask" "cask"
+    brew_install "Virtual Box" "virtualbox" "caskroom/cask" "cask"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -214,8 +204,6 @@ install_apps() {
     brew_install "pyenv-virtualenv" "pyenv-virtualenv"
     brew_install "ffmpeg" "ffmpeg"
     brew_install "ImageMagick" "imagemagick --with-webp"
-    brew_install "exercism" "exercism"
-    brew_install "android-platform-tools" "android-platform-tools"
     brew_install "Ruby Manager" "rbenv"
 
 }
