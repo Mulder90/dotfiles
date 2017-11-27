@@ -198,13 +198,14 @@ install_apps() {
     brew_install "jq" "jq"
     brew_install "mongodb" "mongodb"
     brew_install "postgresql" "postgresql"
-    brew_install "The Silver Searcher" "the_silver_searcher"
+    brew_install "ripgrep" "ripgrep"
     brew_install "yarn" "yarn"
     brew_install "elixir" "elixir"
     brew_install "pyenv-virtualenv" "pyenv-virtualenv"
     brew_install "ffmpeg" "ffmpeg"
     brew_install "ImageMagick" "imagemagick --with-webp"
     brew_install "Ruby Manager" "rbenv"
+    brew_install "go" "go"
 
 }
 
