@@ -161,7 +161,6 @@ install_apps() {
 
     # Cask
     brew_install "Java" "java" "caskroom/cask" "cask"
-    brew_install "VLC" "vlc" "caskroom/cask" "cask"
     brew_install "AppCleaner" "appcleaner" "caskroom/cask" "cask"
     brew_install "Flux" "flux" "caskroom/cask" "cask"
     brew_install "Dropbox" "dropbox" "caskroom/cask" "cask"
