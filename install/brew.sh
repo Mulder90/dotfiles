@@ -170,6 +170,7 @@ install_apps() {
     brew_install "Caffeine" "caffeine" "caskroom/cask" "cask"
     brew_install "Slack" "slack" "caskroom/cask" "cask"
     brew_install "Visual Studio Code Insiders" "visual-studio-code-insiders" "caskroom/cask" "cask"
+    brew_install "Intellij CE" "intellij-idea-ce" "caskroom/cask" "cask"
     brew_install "qlcolorcode" "qlcolorcode" "caskroom/cask" "cask"
     brew_install "qlstephen" "qlstephen" "caskroom/cask" "cask"
     brew_install "quicklook-csv" "quicklook-csv" "caskroom/cask" "cask"
@@ -185,7 +186,6 @@ install_apps() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     brew_install "Git" "git"
-    brew_install "Node" "node"
     brew_install "wget" "wget --with-iri"
     brew_install "coreutils" "coreutils"
     brew_install "moreutils" "moreutils"
@@ -198,13 +198,14 @@ install_apps() {
     brew_install "mongodb" "mongodb"
     brew_install "postgresql" "postgresql"
     brew_install "ripgrep" "ripgrep"
+    brew_install "ffmpeg" "ffmpeg"
+    brew_install "ImageMagick" "imagemagick --with-webp"
+    brew_install "Node" "node"
+    brew_install "go" "go"
     brew_install "yarn" "yarn"
     brew_install "elixir" "elixir"
     brew_install "pyenv-virtualenv" "pyenv-virtualenv"
-    brew_install "ffmpeg" "ffmpeg"
-    brew_install "ImageMagick" "imagemagick --with-webp"
-    brew_install "Ruby Manager" "rbenv"
-    brew_install "go" "go"
+    brew_install "sbt" "sbt@1"
 
 }
 

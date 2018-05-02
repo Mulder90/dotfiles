@@ -22,7 +22,6 @@ main() {
     install_npm_package "n" "n"
     install_npm_package "npm-check" "npm-check"
     install_npm_package "tern" "tern"
-    install_npm_package "eslint" "eslint"
     install_npm_package "diff-so-fancy" "diff-so-fancy"
     install_npm_package "http-server" "http-server"
     install_npm_package "rebase-editor" "rebase-editor"

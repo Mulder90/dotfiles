@@ -10,6 +10,7 @@
 	editm = "!$EDITOR $(git ls-files -m)"
 	diffs = !git diff --staged
 	sattus = !git status
+    master = !git checkout master
 
 	alias = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 
