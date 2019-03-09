@@ -1,7 +1,7 @@
 # disable oh my zsh auto updates
 DISABLE_AUTO_UPDATE="true"
 
-source ~/zgen/zgen.zsh
+source "${HOME}/.zgen/zgen.zsh"
 
 # if the init scipt doesn't exist
 if ! zgen saved; then
@@ -17,7 +17,6 @@ if ! zgen saved; then
 
 	zgen oh-my-zsh plugins/git
 	zgen oh-my-zsh plugins/colored-man-pages
-	zgen oh-my-zsh plugins/virtualenvwrapper
   zgen oh-my-zsh plugins/python
   zgen oh-my-zsh plugins/npm
   zgen oh-my-zsh plugins/brew
